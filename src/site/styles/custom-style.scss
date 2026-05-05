@@ -11,8 +11,8 @@
   --bg2:       #ede8de;
   --white:     #ffffff;
   --ink:       #111008;
-  --ink2:      #3a3830;
-  --ink3:      #9a9488;
+  --ink2:      #1a1810;
+  --ink3:      #5a5448;
   --accent:    #111008;
   --border:    rgba(17,16,8,0.1);
   --sand:      rgba(17,16,8,0.08);
@@ -26,7 +26,7 @@ body, html {
   color: var(--ink) !important;
   font-family: 'DM Sans', sans-serif !important;
   font-size: 15px !important;
-  font-weight: 300 !important;
+  font-weight: 400 !important;
   line-height: 1.75 !important;
   -webkit-font-smoothing: antialiased !important;
   margin: 0 !important;
@@ -189,15 +189,17 @@ h4, h5, h6 {
 
 p {
   font-size: 0.93rem !important;
+  font-weight: 400 !important;
   line-height: 1.85 !important;
-  color: var(--ink2) !important;
+  color: var(--ink) !important;
   margin-bottom: 1rem !important;
 }
 
 li {
   font-size: 0.93rem !important;
+  font-weight: 400 !important;
   line-height: 1.8 !important;
-  color: var(--ink2) !important;
+  color: var(--ink) !important;
   margin-bottom: 0.25rem !important;
 }
 
