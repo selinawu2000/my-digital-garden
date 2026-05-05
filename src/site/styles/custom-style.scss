@@ -1,232 +1,227 @@
 /* ============================================
    Selina's Digital Garden — Custom Style
-   配色：紫粉蓝 · 字体：标题衬线 + 正文无衬线
+   配色：自然绿米棕 · 标题衬线 + 正文无衬线
    ============================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap');
 
-/* ── 颜色变量 ── */
 :root {
-  --purple:     #b8a4d8;
-  --pink-light: #f5c6d8;
-  --pink:       #f0a0b8;
-  --blue-light: #b8d4f5;
-  --blue:       #90b8f0;
-
-  --bg:         #fdf9fc;
-  --bg2:        #f7f0f8;
-  --ink:        #2a2235;
-  --ink2:       #5a4f6a;
-  --ink3:       #9a8faa;
-  --border:     rgba(184,164,216,0.2);
+  --green:      #b5c4a0;
+  --green-light:#d4e0c4;
+  --cream:      #f8f5e6;
+  --sand:       #edd9b0;
+  --brown:      #c89050;
+  --bg:         #faf8f2;
+  --bg2:        #f2ede0;
+  --ink:        #2d2820;
+  --ink2:       #5a5040;
+  --ink3:       #9a8f78;
+  --border:     rgba(180,160,120,0.18);
 }
 
-/* ── 全局背景和字体 ── */
 body {
   background-color: var(--bg) !important;
   color: var(--ink) !important;
   font-family: 'DM Sans', sans-serif !important;
-  font-weight: 300;
-}
-
-/* ── 标题：衬线字体 ── */
-h1, h2, h3, h4 {
-  font-family: 'DM Serif Display', serif !important;
-  font-weight: 400 !important;
-  color: var(--ink) !important;
-  letter-spacing: -0.01em;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  line-height: 1.7 !important;
 }
 
 h1 {
-  font-size: 2rem !important;
-  background: linear-gradient(135deg, var(--purple), var(--pink));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 0.5rem !important;
+  font-family: 'DM Serif Display', serif !important;
+  font-size: 1.7rem !important;
+  font-weight: 400 !important;
+  color: var(--ink) !important;
+  letter-spacing: -0.01em !important;
+  margin-bottom: 0.4rem !important;
+  line-height: 1.25 !important;
 }
 
 h2 {
-  font-size: 1.4rem !important;
-  color: var(--ink2) !important;
-  border-bottom: 1.5px solid var(--pink-light) !important;
-  padding-bottom: 6px !important;
-  margin-top: 2rem !important;
+  font-family: 'DM Serif Display', serif !important;
+  font-size: 1.2rem !important;
+  font-weight: 400 !important;
+  color: var(--ink) !important;
+  border-bottom: 1px solid var(--sand) !important;
+  padding-bottom: 5px !important;
+  margin-top: 1.8rem !important;
+  margin-bottom: 0.8rem !important;
 }
 
 h3 {
-  font-size: 1.1rem !important;
-  color: var(--purple) !important;
-}
-
-/* ── 正文 ── */
-p, li {
   font-family: 'DM Sans', sans-serif !important;
   font-size: 0.95rem !important;
-  line-height: 1.85 !important;
-  color: var(--ink2) !important;
-  font-weight: 300;
+  font-weight: 500 !important;
+  color: var(--brown) !important;
+  margin-top: 1.2rem !important;
 }
 
-/* ── 链接 ── */
+h4, h5, h6 {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 0.88rem !important;
+  font-weight: 500 !important;
+  color: var(--ink2) !important;
+}
+
+p {
+  font-size: 0.9rem !important;
+  line-height: 1.75 !important;
+  color: var(--ink2) !important;
+  margin-bottom: 0.8rem !important;
+}
+
+li {
+  font-size: 0.9rem !important;
+  line-height: 1.7 !important;
+  color: var(--ink2) !important;
+}
+
 a {
-  color: var(--purple) !important;
+  color: var(--brown) !important;
   text-decoration: none !important;
-  border-bottom: 1px solid var(--pink-light) !important;
-  transition: all 0.2s !important;
+  border-bottom: 1px solid var(--sand) !important;
+  transition: all 0.15s !important;
 }
 
 a:hover {
-  color: var(--pink) !important;
-  border-bottom-color: var(--pink) !important;
-  background: rgba(240,160,184,0.08) !important;
+  color: var(--ink) !important;
+  border-bottom-color: var(--brown) !important;
+  background: rgba(200,144,80,0.06) !important;
 }
 
-/* ── 导航栏 ── */
 .site-header, header, nav {
   background: white !important;
   border-bottom: 1px solid var(--border) !important;
-  box-shadow: 0 1px 20px rgba(184,164,216,0.1) !important;
+  box-shadow: 0 1px 12px rgba(180,160,120,0.08) !important;
 }
 
 .site-name, .site-title {
   font-family: 'DM Serif Display', serif !important;
-  font-size: 1.2rem !important;
-  background: linear-gradient(135deg, var(--purple), var(--blue));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-size: 1rem !important;
+  color: var(--ink) !important;
 }
 
-/* ── 搜索框 ── */
 input[type="search"], .search-input {
   background: var(--bg2) !important;
-  border: 1px solid var(--pink-light) !important;
-  border-radius: 20px !important;
+  border: 1px solid var(--sand) !important;
+  border-radius: 16px !important;
   font-family: 'DM Sans', sans-serif !important;
-  font-size: 0.85rem !important;
+  font-size: 0.82rem !important;
   color: var(--ink) !important;
-  padding: 6px 16px !important;
+  padding: 5px 14px !important;
 }
 
 input[type="search"]:focus {
-  border-color: var(--purple) !important;
+  border-color: var(--green) !important;
   outline: none !important;
-  box-shadow: 0 0 0 3px rgba(184,164,216,0.2) !important;
+  box-shadow: 0 0 0 2px rgba(181,196,160,0.25) !important;
 }
 
-/* ── 引用块 ── */
 blockquote {
-  border-left: 3px solid var(--pink) !important;
-  background: linear-gradient(to right, rgba(245,198,216,0.15), transparent) !important;
-  padding: 12px 20px !important;
-  border-radius: 0 8px 8px 0 !important;
+  border-left: 2px solid var(--green) !important;
+  background: rgba(212,224,196,0.15) !important;
+  padding: 10px 18px !important;
+  border-radius: 0 6px 6px 0 !important;
   font-family: 'DM Serif Display', serif !important;
   font-style: italic !important;
+  font-size: 0.92rem !important;
   color: var(--ink2) !important;
+  margin: 1rem 0 !important;
 }
 
-/* ── 代码块 ── */
 code {
   font-family: 'DM Mono', monospace !important;
-  font-size: 0.82rem !important;
+  font-size: 0.8rem !important;
   background: var(--bg2) !important;
   border: 1px solid var(--border) !important;
-  border-radius: 4px !important;
-  padding: 1px 6px !important;
-  color: var(--purple) !important;
+  border-radius: 3px !important;
+  padding: 1px 5px !important;
+  color: var(--brown) !important;
 }
 
 pre {
-  background: var(--ink) !important;
-  border-radius: 10px !important;
-  padding: 16px 20px !important;
+  background: #2d2820 !important;
+  border-radius: 8px !important;
+  padding: 14px 18px !important;
   border: none !important;
 }
 
 pre code {
   background: transparent !important;
   border: none !important;
-  color: var(--pink-light) !important;
-  font-size: 0.83rem !important;
+  color: var(--cream) !important;
+  font-size: 0.8rem !important;
 }
 
-/* ── 标签 tag ── */
 .tag, .tags a {
-  background: linear-gradient(135deg, rgba(184,164,216,0.15), rgba(144,184,240,0.15)) !important;
-  border: 1px solid var(--blue-light) !important;
-  border-radius: 12px !important;
+  background: rgba(181,196,160,0.2) !important;
+  border: 1px solid var(--green-light) !important;
+  border-radius: 10px !important;
   color: var(--ink2) !important;
-  font-size: 0.78rem !important;
-  padding: 2px 10px !important;
-  font-family: 'DM Sans', sans-serif !important;
+  font-size: 0.75rem !important;
+  padding: 1px 8px !important;
 }
 
-/* ── 知识图谱 graph ── */
-.graph-view-container {
-  background: var(--bg) !important;
-}
-
-/* ── 侧边栏 backlinks ── */
 .backlinks, .sidebar {
   background: var(--bg2) !important;
   border-left: 1px solid var(--border) !important;
+  font-size: 0.85rem !important;
 }
 
 .backlinks h4, .sidebar h4 {
   font-family: 'DM Sans', sans-serif !important;
-  font-size: 0.75rem !important;
+  font-size: 0.7rem !important;
   font-weight: 500 !important;
   letter-spacing: 0.08em !important;
   text-transform: uppercase !important;
   color: var(--ink3) !important;
 }
 
-/* ── 文章容器 ── */
 .content, article, .markdown-content {
-  max-width: 680px !important;
+  max-width: 660px !important;
   margin: 0 auto !important;
-  padding: 40px 24px !important;
+  padding: 32px 24px !important;
 }
 
-/* ── 分割线 ── */
 hr {
   border: none !important;
   height: 1px !important;
-  background: linear-gradient(to right, transparent, var(--pink-light), transparent) !important;
-  margin: 2rem 0 !important;
+  background: linear-gradient(to right, transparent, var(--sand), transparent) !important;
+  margin: 1.8rem 0 !important;
 }
 
-/* ── 表格 ── */
 table {
   border-collapse: collapse !important;
   width: 100% !important;
-  font-size: 0.88rem !important;
+  font-size: 0.85rem !important;
 }
 
 th {
-  background: linear-gradient(135deg, rgba(184,164,216,0.2), rgba(144,184,240,0.2)) !important;
+  background: var(--bg2) !important;
   color: var(--ink) !important;
   font-family: 'DM Sans', sans-serif !important;
   font-weight: 500 !important;
-  padding: 10px 14px !important;
-  border-bottom: 2px solid var(--pink-light) !important;
+  font-size: 0.82rem !important;
+  padding: 8px 12px !important;
+  border-bottom: 1.5px solid var(--sand) !important;
+  text-align: left !important;
 }
 
 td {
-  padding: 8px 14px !important;
+  padding: 7px 12px !important;
   border-bottom: 1px solid var(--border) !important;
   color: var(--ink2) !important;
+  font-size: 0.85rem !important;
 }
 
 tr:hover td {
-  background: rgba(245,198,216,0.08) !important;
+  background: rgba(237,217,176,0.12) !important;
 }
 
-/* ── 页脚 ── */
 footer {
   border-top: 1px solid var(--border) !important;
   color: var(--ink3) !important;
-  font-size: 0.8rem !important;
+  font-size: 0.75rem !important;
   font-family: 'DM Mono', monospace !important;
 }
