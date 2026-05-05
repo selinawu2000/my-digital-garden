@@ -35,7 +35,7 @@ body, html {
 /* ══ 왼쪽 사이드바 ══ */
 .sidebar, nav.sidebar, .filetree-sidebar,
 [class*="sidebar"] {
-  background-color: var(--white) !important;
+  background-color: #e8e2d6 !important;
   border-right: 1px solid var(--border) !important;
 }
 
@@ -119,7 +119,7 @@ header, .site-header {
 .right-sidebar, aside,
 [class*="toc-container"], [class*="table-of-content"],
 [class*="right-sidebar"] {
-  background: var(--white) !important;
+  background: #e8e2d6 !important;
   border-left: 1px solid var(--border) !important;
 }
 
@@ -318,4 +318,16 @@ footer {
   letter-spacing: 0.1em !important;
   text-transform: uppercase !important;
   color: var(--ink3) !important;
+}
+
+/* 관계 그래프 노드 라벨 */
+.graph-view-container text,
+.graph-view-container .node-label,
+canvas + div,
+[class*="graph"] text,
+[class*="graph"] .label {
+  fill: #1a1810 !important;
+  color: #1a1810 !important;
+  font-size: 12px !important;
+  font-family: 'DM Sans', sans-serif !important;
 }
