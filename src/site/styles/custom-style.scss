@@ -1,13 +1,232 @@
+/* ============================================
+   Selina's Digital Garden — Custom Style
+   配色：紫粉蓝 · 字体：标题衬线 + 正文无衬线
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap');
+
+/* ── 颜色变量 ── */
+:root {
+  --purple:     #b8a4d8;
+  --pink-light: #f5c6d8;
+  --pink:       #f0a0b8;
+  --blue-light: #b8d4f5;
+  --blue:       #90b8f0;
+
+  --bg:         #fdf9fc;
+  --bg2:        #f7f0f8;
+  --ink:        #2a2235;
+  --ink2:       #5a4f6a;
+  --ink3:       #9a8faa;
+  --border:     rgba(184,164,216,0.2);
+}
+
+/* ── 全局背景和字体 ── */
 body {
-    /***
-      ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
-      IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
-   ***/
-    //  background-color: white;
-    //  .content {
-    //   font-size: 14px;
-    //  }
-    //  h1 {
-    //   color: black;
-    //  }
+  background-color: var(--bg) !important;
+  color: var(--ink) !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-weight: 300;
+}
+
+/* ── 标题：衬线字体 ── */
+h1, h2, h3, h4 {
+  font-family: 'DM Serif Display', serif !important;
+  font-weight: 400 !important;
+  color: var(--ink) !important;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: 2rem !important;
+  background: linear-gradient(135deg, var(--purple), var(--pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem !important;
+}
+
+h2 {
+  font-size: 1.4rem !important;
+  color: var(--ink2) !important;
+  border-bottom: 1.5px solid var(--pink-light) !important;
+  padding-bottom: 6px !important;
+  margin-top: 2rem !important;
+}
+
+h3 {
+  font-size: 1.1rem !important;
+  color: var(--purple) !important;
+}
+
+/* ── 正文 ── */
+p, li {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 0.95rem !important;
+  line-height: 1.85 !important;
+  color: var(--ink2) !important;
+  font-weight: 300;
+}
+
+/* ── 链接 ── */
+a {
+  color: var(--purple) !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid var(--pink-light) !important;
+  transition: all 0.2s !important;
+}
+
+a:hover {
+  color: var(--pink) !important;
+  border-bottom-color: var(--pink) !important;
+  background: rgba(240,160,184,0.08) !important;
+}
+
+/* ── 导航栏 ── */
+.site-header, header, nav {
+  background: white !important;
+  border-bottom: 1px solid var(--border) !important;
+  box-shadow: 0 1px 20px rgba(184,164,216,0.1) !important;
+}
+
+.site-name, .site-title {
+  font-family: 'DM Serif Display', serif !important;
+  font-size: 1.2rem !important;
+  background: linear-gradient(135deg, var(--purple), var(--blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── 搜索框 ── */
+input[type="search"], .search-input {
+  background: var(--bg2) !important;
+  border: 1px solid var(--pink-light) !important;
+  border-radius: 20px !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 0.85rem !important;
+  color: var(--ink) !important;
+  padding: 6px 16px !important;
+}
+
+input[type="search"]:focus {
+  border-color: var(--purple) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(184,164,216,0.2) !important;
+}
+
+/* ── 引用块 ── */
+blockquote {
+  border-left: 3px solid var(--pink) !important;
+  background: linear-gradient(to right, rgba(245,198,216,0.15), transparent) !important;
+  padding: 12px 20px !important;
+  border-radius: 0 8px 8px 0 !important;
+  font-family: 'DM Serif Display', serif !important;
+  font-style: italic !important;
+  color: var(--ink2) !important;
+}
+
+/* ── 代码块 ── */
+code {
+  font-family: 'DM Mono', monospace !important;
+  font-size: 0.82rem !important;
+  background: var(--bg2) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 4px !important;
+  padding: 1px 6px !important;
+  color: var(--purple) !important;
+}
+
+pre {
+  background: var(--ink) !important;
+  border-radius: 10px !important;
+  padding: 16px 20px !important;
+  border: none !important;
+}
+
+pre code {
+  background: transparent !important;
+  border: none !important;
+  color: var(--pink-light) !important;
+  font-size: 0.83rem !important;
+}
+
+/* ── 标签 tag ── */
+.tag, .tags a {
+  background: linear-gradient(135deg, rgba(184,164,216,0.15), rgba(144,184,240,0.15)) !important;
+  border: 1px solid var(--blue-light) !important;
+  border-radius: 12px !important;
+  color: var(--ink2) !important;
+  font-size: 0.78rem !important;
+  padding: 2px 10px !important;
+  font-family: 'DM Sans', sans-serif !important;
+}
+
+/* ── 知识图谱 graph ── */
+.graph-view-container {
+  background: var(--bg) !important;
+}
+
+/* ── 侧边栏 backlinks ── */
+.backlinks, .sidebar {
+  background: var(--bg2) !important;
+  border-left: 1px solid var(--border) !important;
+}
+
+.backlinks h4, .sidebar h4 {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: var(--ink3) !important;
+}
+
+/* ── 文章容器 ── */
+.content, article, .markdown-content {
+  max-width: 680px !important;
+  margin: 0 auto !important;
+  padding: 40px 24px !important;
+}
+
+/* ── 分割线 ── */
+hr {
+  border: none !important;
+  height: 1px !important;
+  background: linear-gradient(to right, transparent, var(--pink-light), transparent) !important;
+  margin: 2rem 0 !important;
+}
+
+/* ── 表格 ── */
+table {
+  border-collapse: collapse !important;
+  width: 100% !important;
+  font-size: 0.88rem !important;
+}
+
+th {
+  background: linear-gradient(135deg, rgba(184,164,216,0.2), rgba(144,184,240,0.2)) !important;
+  color: var(--ink) !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-weight: 500 !important;
+  padding: 10px 14px !important;
+  border-bottom: 2px solid var(--pink-light) !important;
+}
+
+td {
+  padding: 8px 14px !important;
+  border-bottom: 1px solid var(--border) !important;
+  color: var(--ink2) !important;
+}
+
+tr:hover td {
+  background: rgba(245,198,216,0.08) !important;
+}
+
+/* ── 页脚 ── */
+footer {
+  border-top: 1px solid var(--border) !important;
+  color: var(--ink3) !important;
+  font-size: 0.8rem !important;
+  font-family: 'DM Mono', monospace !important;
 }
