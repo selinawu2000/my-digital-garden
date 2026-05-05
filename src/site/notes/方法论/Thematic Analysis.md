@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"created":"2026-05-05T22:42:25.687+01:00","updated":"2026-05-05T22:52:26.413+01:00","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"//thematic-analysis/","created":"2026-05-05T22:42:25.687+01:00","updated":"2026-05-05T23:11:06.506+01:00","dg-note-properties":{}}
 ---
 
-[[方法论/方法论\|方法论]]
+
 
 ## 方法概述（中文）
 质性研究中最常用的分析方法，通过识别数据中的主题模式来理解现象。
