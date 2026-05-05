@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/enterprise/how-to-gain-entrepreneurship-skills-and-mindset/","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/enterprise/how-to-gain-entrepreneurship-skills-and-mindset/","created":"2026-05-05T16:05:03.264+01:00","updated":"2026-05-05T20:33:09.030+01:00","dg-note-properties":{}}
 ---
 
 set up business taking risks in the hope of profit
